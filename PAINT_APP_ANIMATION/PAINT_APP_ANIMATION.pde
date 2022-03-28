@@ -184,10 +184,13 @@ void mouseReleased() {
 
 
 void mouseDragged() {
+  
+  controlSlider();
+  
   if (mouseX > 130) {
     if (dogOn == false) {
       //squiggly line
-      controlSlider();
+      
       strokeWeight(thickness);
       stroke(selectedColor);
       line(pmouseX, pmouseY, mouseX, mouseY);
