@@ -135,6 +135,10 @@ void draw() {
   tactile(30, 505, 70, 20);
   stroke(0);
   rect(30, 505, 70, 20);
+  fill(0);
+  textAlign(CENTER, CENTER);  
+  textSize(12);
+  text("NEW", 65, 515);
 } // end of draw =============================================
 
 
@@ -196,7 +200,7 @@ void mouseDragged() {
       line(pmouseX, pmouseY, mouseX, mouseY);
     } else {
       //dog drawing
-      image(dog, mouseX, mouseY, 80, 80);
+      image(dog, mouseX, mouseY, thickness*10, thickness*10);
     }
   }
 }// end of
